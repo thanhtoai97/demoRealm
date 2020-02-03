@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1A4189C23A7373C00AAF3CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A4189B23A7373C00AAF3CC /* AppDelegate.swift */; };
+		C1A4189E23A7373C00AAF3CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A4189D23A7373C00AAF3CC /* SceneDelegate.swift */; };
+		C1A418A323A7373C00AAF3CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A418A123A7373C00AAF3CC /* Main.storyboard */; };
+		C1A418A523A7374000AAF3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A418A423A7374000AAF3CC /* Assets.xcassets */; };
+		C1A418A823A7374000AAF3CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A418A623A7374000AAF3CC /* LaunchScreen.storyboard */; };
+		C1A418B223A738B200AAF3CC /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418B123A738B200AAF3CC /* BookTableViewCell.swift */; };
+		C1A418B423A7391600AAF3CC /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418B323A7391600AAF3CC /* BookTableViewController.swift */; };
+		C1A418B623A73BAB00AAF3CC /* BookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418B523A73BAB00AAF3CC /* BookItem.swift */; };
+		C1A418C123A9CFB600AAF3CC /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418C023A9CFB600AAF3CC /* PostModel.swift */; };
+		C1A418C323A9D4AE00AAF3CC /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418C223A9D4AE00AAF3CC /* PostListPresenter.swift */; };
+		C1A418C723A9DD1000AAF3CC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418C623A9DD1000AAF3CC /* PostTableViewCell.swift */; };
+		C1A418C923A9DE1100AAF3CC /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418C823A9DE1100AAF3CC /* PostListTableViewController.swift */; };
+		C1A418CB23A9E7D300AAF3CC /* PostListInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418CA23A9E7D300AAF3CC /* PostListInteracter.swift */; };
+		C1A418CD23AA0C6F00AAF3CC /* PostListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418CC23AA0C6F00AAF3CC /* PostListWireFrame.swift */; };
+		C1A418D223AA32E600AAF3CC /* PostListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418D123AA32E600AAF3CC /* PostListPresenterProtocol.swift */; };
+		C1A418D423AA334300AAF3CC /* PostListInteracterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418D323AA334300AAF3CC /* PostListInteracterProtocol.swift */; };
+		C1A418D623AA336600AAF3CC /* PostListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418D523AA336600AAF3CC /* PostListViewProtocol.swift */; };
+		C1A418D823AA338D00AAF3CC /* PostListWireFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418D723AA338D00AAF3CC /* PostListWireFrameProtocol.swift */; };
+		C1A418DA23AA346300AAF3CC /* PostListRemoteDataManagerInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418D923AA346300AAF3CC /* PostListRemoteDataManagerInputProtocol.swift */; };
+		C1A418DC23AA348C00AAF3CC /* PostListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418DB23AA348C00AAF3CC /* PostListRemoteDataManager.swift */; };
+		C1A418DE23AA34BA00AAF3CC /* PostListLocalDataManagerInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418DD23AA34BA00AAF3CC /* PostListLocalDataManagerInputProtocol.swift */; };
+		C1A418E023AA34DF00AAF3CC /* PostListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418DF23AA34DF00AAF3CC /* PostListLocalDataManager.swift */; };
+		C1A418E223AA389D00AAF3CC /* PostListDataManagerInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418E123AA389D00AAF3CC /* PostListDataManagerInputProtocol.swift */; };
+		C1A418E423AA395200AAF3CC /* PostListRemoteDataManagerOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A418E323AA395200AAF3CC /* PostListRemoteDataManagerOutputProtocol.swift */; };
+		E5FAE44129E249ECCC43D4FF /* Pods_demoReal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56C915183179E8D74EDBF0E /* Pods_demoReal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		57F2D990E5C5F2A8DAEA52D2 /* Pods-demoReal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoReal.release.xcconfig"; path = "Target Support Files/Pods-demoReal/Pods-demoReal.release.xcconfig"; sourceTree = "<group>"; };
+		BBCAA499F2A88E9256D10F11 /* Pods-demoReal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoReal.debug.xcconfig"; path = "Target Support Files/Pods-demoReal/Pods-demoReal.debug.xcconfig"; sourceTree = "<group>"; };
+		C1A4189823A7373C00AAF3CC /* demoReal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoReal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A4189B23A7373C00AAF3CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1A4189D23A7373C00AAF3CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C1A418A223A7373C00AAF3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1A418A423A7374000AAF3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1A418A723A7374000AAF3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1A418A923A7374000AAF3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A418B123A738B200AAF3CC /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		C1A418B323A7391600AAF3CC /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		C1A418B523A73BAB00AAF3CC /* BookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItem.swift; sourceTree = "<group>"; };
+		C1A418C023A9CFB600AAF3CC /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		C1A418C223A9D4AE00AAF3CC /* PostListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
+		C1A418C623A9DD1000AAF3CC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C1A418C823A9DE1100AAF3CC /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		C1A418CA23A9E7D300AAF3CC /* PostListInteracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListInteracter.swift; sourceTree = "<group>"; };
+		C1A418CC23AA0C6F00AAF3CC /* PostListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListWireFrame.swift; sourceTree = "<group>"; };
+		C1A418D123AA32E600AAF3CC /* PostListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListPresenterProtocol.swift; sourceTree = "<group>"; };
+		C1A418D323AA334300AAF3CC /* PostListInteracterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListInteracterProtocol.swift; sourceTree = "<group>"; };
+		C1A418D523AA336600AAF3CC /* PostListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewProtocol.swift; sourceTree = "<group>"; };
+		C1A418D723AA338D00AAF3CC /* PostListWireFrameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListWireFrameProtocol.swift; sourceTree = "<group>"; };
+		C1A418D923AA346300AAF3CC /* PostListRemoteDataManagerInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRemoteDataManagerInputProtocol.swift; sourceTree = "<group>"; };
+		C1A418DB23AA348C00AAF3CC /* PostListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRemoteDataManager.swift; sourceTree = "<group>"; };
+		C1A418DD23AA34BA00AAF3CC /* PostListLocalDataManagerInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListLocalDataManagerInputProtocol.swift; sourceTree = "<group>"; };
+		C1A418DF23AA34DF00AAF3CC /* PostListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListLocalDataManager.swift; sourceTree = "<group>"; };
+		C1A418E123AA389D00AAF3CC /* PostListDataManagerInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDataManagerInputProtocol.swift; sourceTree = "<group>"; };
+		C1A418E323AA395200AAF3CC /* PostListRemoteDataManagerOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRemoteDataManagerOutputProtocol.swift; sourceTree = "<group>"; };
+		E56C915183179E8D74EDBF0E /* Pods_demoReal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demoReal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1A4189523A7373C00AAF3CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FAE44129E249ECCC43D4FF /* Pods_demoReal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		007985D0008B92E4BCFCC03E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBCAA499F2A88E9256D10F11 /* Pods-demoReal.debug.xcconfig */,
+				57F2D990E5C5F2A8DAEA52D2 /* Pods-demoReal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1A4188F23A7373C00AAF3CC = {
+			isa = PBXGroup;
+			children = (
+				C1A4189A23A7373C00AAF3CC /* demoReal */,
+				C1A4189923A7373C00AAF3CC /* Products */,
+				007985D0008B92E4BCFCC03E /* Pods */,
+				E1B91DBB8E988BF8EEED8557 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1A4189923A7373C00AAF3CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1A4189823A7373C00AAF3CC /* demoReal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1A4189A23A7373C00AAF3CC /* demoReal */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418B723A9C70F00AAF3CC /* Post */,
+				C1A4189B23A7373C00AAF3CC /* AppDelegate.swift */,
+				C1A4189D23A7373C00AAF3CC /* SceneDelegate.swift */,
+				C1A418B123A738B200AAF3CC /* BookTableViewCell.swift */,
+				C1A418A123A7373C00AAF3CC /* Main.storyboard */,
+				C1A418B523A73BAB00AAF3CC /* BookItem.swift */,
+				C1A418B323A7391600AAF3CC /* BookTableViewController.swift */,
+				C1A418A423A7374000AAF3CC /* Assets.xcassets */,
+				C1A418A623A7374000AAF3CC /* LaunchScreen.storyboard */,
+				C1A418A923A7374000AAF3CC /* Info.plist */,
+			);
+			path = demoReal;
+			sourceTree = "<group>";
+		};
+		C1A418B723A9C70F00AAF3CC /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418BA23A9C76000AAF3CC /* View */,
+				C1A418B923A9C74F00AAF3CC /* Interacter */,
+				C1A418B823A9C73900AAF3CC /* Presenter */,
+				C1A418CE23AA328100AAF3CC /* DataManager */,
+				C1A418BC23A9C8C600AAF3CC /* Entities */,
+				C1A418BB23A9C82C00AAF3CC /* WireFrame */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		C1A418B823A9C73900AAF3CC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418C223A9D4AE00AAF3CC /* PostListPresenter.swift */,
+				C1A418D123AA32E600AAF3CC /* PostListPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C1A418B923A9C74F00AAF3CC /* Interacter */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418CA23A9E7D300AAF3CC /* PostListInteracter.swift */,
+				C1A418D323AA334300AAF3CC /* PostListInteracterProtocol.swift */,
+			);
+			path = Interacter;
+			sourceTree = "<group>";
+		};
+		C1A418BA23A9C76000AAF3CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418C623A9DD1000AAF3CC /* PostTableViewCell.swift */,
+				C1A418C823A9DE1100AAF3CC /* PostListTableViewController.swift */,
+				C1A418D523AA336600AAF3CC /* PostListViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1A418BB23A9C82C00AAF3CC /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418CC23AA0C6F00AAF3CC /* PostListWireFrame.swift */,
+				C1A418D723AA338D00AAF3CC /* PostListWireFrameProtocol.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		C1A418BC23A9C8C600AAF3CC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418C023A9CFB600AAF3CC /* PostModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C1A418CE23AA328100AAF3CC /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418D023AA32B000AAF3CC /* Remote */,
+				C1A418CF23AA329900AAF3CC /* Local */,
+				C1A418E123AA389D00AAF3CC /* PostListDataManagerInputProtocol.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C1A418CF23AA329900AAF3CC /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418DD23AA34BA00AAF3CC /* PostListLocalDataManagerInputProtocol.swift */,
+				C1A418DF23AA34DF00AAF3CC /* PostListLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		C1A418D023AA32B000AAF3CC /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				C1A418D923AA346300AAF3CC /* PostListRemoteDataManagerInputProtocol.swift */,
+				C1A418E323AA395200AAF3CC /* PostListRemoteDataManagerOutputProtocol.swift */,
+				C1A418DB23AA348C00AAF3CC /* PostListRemoteDataManager.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		E1B91DBB8E988BF8EEED8557 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E56C915183179E8D74EDBF0E /* Pods_demoReal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1A4189723A7373C00AAF3CC /* demoReal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1A418AC23A7374000AAF3CC /* Build configuration list for PBXNativeTarget "demoReal" */;
+			buildPhases = (
+				6CD5B092538471012C4574B8 /* [CP] Check Pods Manifest.lock */,
+				C1A4189423A7373C00AAF3CC /* Sources */,
+				C1A4189523A7373C00AAF3CC /* Frameworks */,
+				C1A4189623A7373C00AAF3CC /* Resources */,
+				8FFE55F3F18B93B725A89AE1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demoReal;
+			productName = demoReal;
+			productReference = C1A4189823A7373C00AAF3CC /* demoReal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1A4189023A7373C00AAF3CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Le Thanh Thanh Toai";
+				TargetAttributes = {
+					C1A4189723A7373C00AAF3CC = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = C1A4189323A7373C00AAF3CC /* Build configuration list for PBXProject "demoReal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1A4188F23A7373C00AAF3CC;
+			productRefGroup = C1A4189923A7373C00AAF3CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1A4189723A7373C00AAF3CC /* demoReal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1A4189623A7373C00AAF3CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A418A823A7374000AAF3CC /* LaunchScreen.storyboard in Resources */,
+				C1A418A523A7374000AAF3CC /* Assets.xcassets in Resources */,
+				C1A418A323A7373C00AAF3CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CD5B092538471012C4574B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-demoReal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FFE55F3F18B93B725A89AE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-demoReal/Pods-demoReal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-demoReal/Pods-demoReal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demoReal/Pods-demoReal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1A4189423A7373C00AAF3CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A418D823AA338D00AAF3CC /* PostListWireFrameProtocol.swift in Sources */,
+				C1A418E423AA395200AAF3CC /* PostListRemoteDataManagerOutputProtocol.swift in Sources */,
+				C1A4189C23A7373C00AAF3CC /* AppDelegate.swift in Sources */,
+				C1A418E223AA389D00AAF3CC /* PostListDataManagerInputProtocol.swift in Sources */,
+				C1A418CB23A9E7D300AAF3CC /* PostListInteracter.swift in Sources */,
+				C1A418B223A738B200AAF3CC /* BookTableViewCell.swift in Sources */,
+				C1A418DC23AA348C00AAF3CC /* PostListRemoteDataManager.swift in Sources */,
+				C1A418D623AA336600AAF3CC /* PostListViewProtocol.swift in Sources */,
+				C1A418B623A73BAB00AAF3CC /* BookItem.swift in Sources */,
+				C1A418D423AA334300AAF3CC /* PostListInteracterProtocol.swift in Sources */,
+				C1A418DE23AA34BA00AAF3CC /* PostListLocalDataManagerInputProtocol.swift in Sources */,
+				C1A418E023AA34DF00AAF3CC /* PostListLocalDataManager.swift in Sources */,
+				C1A418DA23AA346300AAF3CC /* PostListRemoteDataManagerInputProtocol.swift in Sources */,
+				C1A418C923A9DE1100AAF3CC /* PostListTableViewController.swift in Sources */,
+				C1A418C123A9CFB600AAF3CC /* PostModel.swift in Sources */,
+				C1A418C323A9D4AE00AAF3CC /* PostListPresenter.swift in Sources */,
+				C1A418B423A7391600AAF3CC /* BookTableViewController.swift in Sources */,
+				C1A4189E23A7373C00AAF3CC /* SceneDelegate.swift in Sources */,
+				C1A418C723A9DD1000AAF3CC /* PostTableViewCell.swift in Sources */,
+				C1A418CD23AA0C6F00AAF3CC /* PostListWireFrame.swift in Sources */,
+				C1A418D223AA32E600AAF3CC /* PostListPresenterProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C1A418A123A7373C00AAF3CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1A418A223A7373C00AAF3CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1A418A623A7374000AAF3CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1A418A723A7374000AAF3CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1A418AA23A7374000AAF3CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1A418AB23A7374000AAF3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1A418AD23A7374000AAF3CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBCAA499F2A88E9256D10F11 /* Pods-demoReal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = demoReal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Le-Thanh-Thanh-Toai.demoReal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1A418AE23A7374000AAF3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57F2D990E5C5F2A8DAEA52D2 /* Pods-demoReal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = demoReal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Le-Thanh-Thanh-Toai.demoReal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1A4189323A7373C00AAF3CC /* Build configuration list for PBXProject "demoReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A418AA23A7374000AAF3CC /* Debug */,
+				C1A418AB23A7374000AAF3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1A418AC23A7374000AAF3CC /* Build configuration list for PBXNativeTarget "demoReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A418AD23A7374000AAF3CC /* Debug */,
+				C1A418AE23A7374000AAF3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1A4189023A7373C00AAF3CC /* Project object */;
+}
